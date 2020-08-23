@@ -23,6 +23,11 @@
             background-color: rgb(233, 233, 233);
             margin-bottom: 15px;
             padding: 15px;
+            transition: all 0.3s;
+        }
+
+        article:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
 
         header {
@@ -30,13 +35,31 @@
             color: white;
             margin-bottom: 15px;
             padding: 15px;
+            display: flex;
+        }
+
+        header div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .img-avatar {
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+            border-radius: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Claudia Purizaca</h1>
-        <h2>Developer</h2>
+        <img class="img-avatar" src="IMG_E0147.JPG">
+        <div>
+            <h1>Claudia Purizaca</h1>
+            <h2>Developer</h2>
+        </div>
     </header>
 
     <article>
