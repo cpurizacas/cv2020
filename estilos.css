@@ -16,12 +16,27 @@ article {
     margin-bottom: 15px;
     padding: 15px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 article:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.firstProject {
+    background-color: yellow;
+    font-weight: bold;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.secondProject {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding-left: 3px;
+    padding-right: 3px;
+}
 
 .contenedor {
     display: flex;
@@ -35,8 +50,8 @@ article:hover {
         color: white; */
         margin-bottom: 15px;
         padding: 15px;
-        display: flex;
-        flex-direction: column;
+       /*  display: flex;
+        flex-direction: column; */
         width: 30%;
         margin-right: 15px;
         border-right: 2px solid rgb(49, 49, 49);
@@ -49,12 +64,44 @@ article:hover {
         object-fit: cover;
     }
 
-    header div {
+ /*    header div {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-    }
+    } */
+
+.imagen-titulo {
+        display: flex;
+}
+    
+.titulos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+    
+header p {
+        margin-top: 20px;
+}
 
 .contenido {
     width: 70%;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+article ul {
+    display: none;
+}
+
+article.active ul {
+    display: block;
+}
+
+img.big {
+    transform: scale(1.2);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }

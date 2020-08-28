@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+    </script>
     <style>
        @import url(estilos.css);
     </style>
@@ -12,14 +17,21 @@
 <body>
     <div class="contenedor">
         <header>
-            <img class="img-avatar" src="IMG_E0147.JPG">
-            <div>
-                <h1>Claudia Purizaca</h1>
-                <h2>Developer</h2>
+            <div class="imagen-titulo">
+                <img class="img-avatar" src="IMG_E0147.JPG">
+                <div class="titulos">
+                    <h1>Claudia Purizaca</h1>
+                    <h2>Developer</h2>
+                </div>
             </div>
+            
+            <p>He formado parte del equipo de Automation del proyecto <span class="firstProject">NEXBI</span> de Interbank y 
+                actualmente del squad de <span class="secondProject">Prevención de Fraude</span> de Bussiness Support.
+            </p>
         </header>
-    
+        
         <div class="contenido">
+            
             <article>
                 <h4>Educación</h4>
                 <ul>
@@ -47,6 +59,20 @@
             </article>
         </div>
     </div>
+    <!-- <script>
+        $('article').click(function(){
+            $(this).addClass('active');
+        });
+    </script> -->
+    <script>
+        $('article').click(function(){
+            $(this).toggleClass('active');
+        });
+
+        $('img').click(function(){
+            $(this).toggleClass('big');
+        });
+    </script>
     
 </body>
 </html>
