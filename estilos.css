@@ -2,7 +2,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5, ul {
+h1, h2, h3, h4, h5, ul, p {
     margin: 0px;
     font-size: 11px;
 }
@@ -21,6 +21,10 @@ article {
 
 article:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.oculto {
+    display: none !important;
 }
 
 .firstProject {
@@ -93,13 +97,13 @@ header p {
     color: white;
 }
 
-article ul {
+/* article ul {
     display: none;
 }
 
 article.active ul {
     display: block;
-}
+} */
 
 img.big {
     transform: scale(1.2);
@@ -111,10 +115,15 @@ img.big {
     padding-right: 30px;
 }
 
-.info-personal p strong {
+.info-personal p strong, article h4, .titulo {
     font-size: 16px;
     color: tomato;
     display: block;
+    margin-bottom: 10px;
+}
+
+.info-personal p strong {
+    margin-bottom: 5px;
 }
 
 .info-personal .ico {
@@ -130,6 +139,45 @@ img.big {
     margin-top: -20px;
     margin-right: -34px;
 }
+
+.lenguajes {
+    margin-top: 30px;
+    text-align: right;
+}
+    .lenguajes p {
+        font-style: italic;
+    }
+
+    .barra {
+        display: block;
+        padding-top: 4px;
+    }
+
+        /* .barra:hover {
+            background-color: red;
+        } */
+
+        .barra span {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-color: grey;
+            border-radius: 50%;
+        }
+
+        .barra .exp {
+            /* background-color: black; */
+        }
+
+        /* .barra:hover .oculto {
+            display: inline-block !important;
+        } */
+
+        .barra:hover .exp {
+            background-color: black;
+        }
+
+        
 
 @media screen and (max-width: 680px) {
     .contenedor{
